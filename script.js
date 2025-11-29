@@ -1,3 +1,4 @@
+
 // Contact Form
 const form = document.getElementById("contactForm");
 const msg = document.getElementById("formMsg");
