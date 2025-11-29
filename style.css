@@ -208,3 +208,39 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* --- hamburger button --- /
+#nav-toggle {
+display: none;              / desktop: invisible */
+background: none;
+border: none;
+font-size: 1.6rem;
+color: #d9d9d9;
+cursor: pointer;
+}
+/* --- mobile styles --- /
+@media (max-width: 600px) {
+#nav-toggle {
+display: block;           / show hamburger /
+margin-left: auto;        / push to right */
+}
+#nav-links {
+position: absolute;
+top: 100%;                /* directly under navbar */
+left: 0;
+right: 0;
+background: #161e2e;
+flex-direction: column;
+max-height: 0;
+overflow: hidden;
+transition: max-height .3s ease;
+}
+#nav-links.open {
+max-height: 300px;        /* enough for 5 links */
+}
+#nav-links a {
+padding: .8rem 1rem;
+border-top: 1px solid #222;
+}
+}
+
+
