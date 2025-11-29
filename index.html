@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyam — Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+
+  <!-- Fullscreen Background Video -->
+  <video id="video-background" autoplay muted loop playsinline>
+    <source src="hacker-bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <h1>Satyam</h1>
+    <p>Cybersecurity Portfolio</p>
+  </div>
+
+</header>
+
+<nav class="navbar">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certs">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a beginner in cybersecurity with interest in ethical hacking, network security, and web vulnerabilities.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Cybersecurity Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Networking Basics</div>
+      <div class="skill">Linux Commands</div>
+      <div class="skill">Wireshark</div>
+      <div class="skill">HTTP/HTTPS</div>
+      <div class="skill">OWASP Awareness</div>
+      <div class="skill">JavaScript</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Packet Analysis</h3>
+        <p>Studied HTTP, HTTPS and TCP handshake using Wireshark.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Password Strength Checker</h3>
+        <p>Created a simple tool that checks password strength using JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>OWASP Top 10 Notes</h3>
+        <p>Summarized common web vulnerabilities for learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs" class="section">
+    <h2>Certifications</h2>
+    <ul class="cert-list">
+      <li>TryHackMe — Intro to Cybersecurity</li>
+      <li>Google Cybersecurity (In Progress)</li>
+      <li>Cisco Networking Basics</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Satyam — Cybersecurity</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
