@@ -2,6 +2,10 @@
 const form = document.getElementById("contactForm");
 const msg = document.getElementById("formMsg");
 
+document.getElementById('nav-toggle').addEventListener('click', () => {
+document.getElementById('nav-links').classList.toggle('open');
+});
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -21,3 +25,4 @@ form.addEventListener("submit", function (e) {
 
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
+
